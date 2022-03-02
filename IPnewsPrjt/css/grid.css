@@ -16,7 +16,13 @@
     grid-row-gap: 0em;
 }
 
-
+/* .mediumstory {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 0em;
+}
+ */
 .width-1 {
     grid-column: span 1;
 }
