@@ -57,6 +57,6 @@ hr {
     border-bottom: none;
 }
 
-.ms {
-    border: 1px solid black;
+.com {
+    column-count: 2;
 }
