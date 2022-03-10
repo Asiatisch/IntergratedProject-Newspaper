@@ -101,7 +101,7 @@ body {
     color: var(--mainBlue);
     width: 85rem;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: white;
 }
 
 ul {
@@ -112,4 +112,8 @@ ul {
 a {
     text-decoration: none;
     color: var(--mainBlue);
+}
+
+.pfont {
+    font-size: 20px;
 }

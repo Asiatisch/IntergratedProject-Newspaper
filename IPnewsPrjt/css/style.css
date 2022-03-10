@@ -7,7 +7,15 @@ p {
     color: #363636;
     margin-bottom: 5px;
 }
-
+.pfont {
+    font-size: 20px;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    color: #363636;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 h5 {
     font-family: 'Roboto', san-serif;
     font-size: 12px;
@@ -60,6 +68,19 @@ hr {
     border-bottom: none;
 }
 
-.com {
-    column-count: 2;
+.button {
+   /*  background-color: #000000; */
+    border: none;
+    color: black;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.linktext {
+    font-family: Arial, Helvetica, sans-serif;
 }
