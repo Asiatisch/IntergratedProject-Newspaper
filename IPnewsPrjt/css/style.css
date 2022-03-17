@@ -84,3 +84,11 @@ hr {
 .linktext {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.summary {
+    font-size: large;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
