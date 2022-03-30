@@ -3,7 +3,7 @@
 
   try {
       
-    $sideStories = Get::byCategory('Business');
+    $sideStories = Get::all('articles', 7);
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -135,70 +135,20 @@
                      </div>
                      <div class="topStory width-4 "> 
                         <div class="width-12">
-                            <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                            <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                With
-                                Rich
-                                Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                Reports
-                                Her
-                                Relationship With </p>
-                                <hr>
-                             </div>
-                             <div class="width-12">
-                                <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                                <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                    With
-                                    Rich
-                                    Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                    Reports
-                                    Her
-                                    Relationship With </p>
-                                    <hr>
-                                    <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                                <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                    With
-                                    Rich
-                                    Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                    Reports
-                                    Her
-                                    Relationship With </p>
-                                   <hr>
-                                   <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                                    <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                        With
-                                        Rich
-                                        Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                        Reports
-                                        Her
-                                        Relationship With </p>
-                                        <hr>
-                                        <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                                        <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                            With
-                                            Rich
-                                            Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                            Reports
-                                            Her
-                                            Relationship With </p>
-                                            <hr>
-                                            <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                                            <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                                                With
-                                                Rich
-                                                Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                                                Reports
-                                                Her
-                                                Relationship With </p>
-                                                <hr>
-                                 </div>
-                                 <?php
-                                    foreach($sideStories as $sideStoy){
-                                    ?>
 
+                                    <?php
+                                    foreach($sideStories as $sideStory){
+                                    ?>
+                                     <h4><a href="url"><?= $sideStory ->headline ?></a> </h4>
+                                    <p><a href="url"><?= $sideStory ->summary ?> </p>
+                                   <hr>
                                  <?php
                                     }
                                      ?>
+                                   
+                                 
+                                 </div>
+                                
                              <div class="topStory width-4">
                              
                             
