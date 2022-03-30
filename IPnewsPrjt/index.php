@@ -3,7 +3,7 @@
 
   try {
       
-    //$stories = Get::byCategory('Business');
+    $sideStories = Get::byCategory('Business');
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -192,6 +192,13 @@
                                                 Relationship With </p>
                                                 <hr>
                                  </div>
+                                 <?php
+                                    foreach($sideStories as $sideStoy){
+                                    ?>
+
+                                 <?php
+                                    }
+                                     ?>
                              <div class="topStory width-4">
                              
                             
