@@ -1,3 +1,17 @@
+<?php
+  require_once 'classes/DBConnector.php';
+
+  try {
+      
+    //$stories = Get::byCategory('Business');
+      
+  } catch (Exception $e) {
+    die("Exception: " . $e->getMessage());
+  }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
