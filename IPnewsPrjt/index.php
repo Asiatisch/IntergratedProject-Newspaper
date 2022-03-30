@@ -83,7 +83,7 @@
                             Reports
                             Her
                             Relationship With </p>
-                         <h5>By Hiroki Hachiman</h5>
+                         <h5>By Hiroku Hachiman</h5>
                     </div>
                     <div class="width-6">
                         <hr>
