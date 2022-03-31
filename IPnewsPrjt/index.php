@@ -62,59 +62,66 @@
                      <div class="width-6">
                          <hr>
                         <h5><span>Business</span>/Economy</h5>
-                         <a href="url"><h3>Japan ruling parties approve economic security bill</h3></a>
-                        <h5>4:42 pm - 01/03/2022</h5>
-                        <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                            With
-                            Rich
-                            Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                            Reports
-                            Her
-                            Relationship With </p>
+                        <?php
+                                    foreach($bottomStories as $bottomStory){
+                                    ?>
+                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
+                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
+                                   
+                                 <?php
+                                    }
+                                     ?>
+                         <h5>By Hiroki Hachiman</h5>
+                        
+                        
+                    </div>
+                    <div class="width-6">
+                        <hr>
+                        <h5><span>Business</span>/Economy</h5>
+                        <?php
+                                    foreach($bottomStories as $bottomStory){
+                                    ?>
+                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
+                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
+                                   
+                                 <?php
+                                    }
+                                     ?>
                          <h5>By Hiroki Hachiman</h5>
                         
                     </div>
                     <div class="width-6">
                         <hr>
                         <h5><span>Business</span>/Economy</h5>
-                        <a href="url"><h3>Japan ruling parties approve economic security bill</h3></a>
-                        <h5>4:42 pm - 01/03/2022</h5>
-                        <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                            With
-                            Rich
-                            Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                            Reports
-                            Her
-                            Relationship With </p>
-                         <h5>By Hiroku Hachiman</h5>
-                    </div>
-                    <div class="width-6">
-                        <hr>
-                        <h5><span>Business</span>/Economy</h5>
-                        <a href="url"><h3>Japan ruling parties approve economic security bill</h3></a>
-                        <h5>4:42 pm - 01/03/2022</h5>
-                        <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                            With
-                            Rich
-                            Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                            Reports
-                            Her
-                            Relationship With </p>
+                        <?php
+                                    foreach($bottomStories as $bottomStory){
+                                    ?>
+                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
+                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
+                                   
+                                 <?php
+                                    }
+                                     ?>
                          <h5>By Hiroki Hachiman</h5>
+                         
                     </div>
                 
                     <div class="width-6">
                         <hr>
                         <h5><span>Business</span>/Economy</h5>
-                        <a href="url"><h3>Japan ruling parties approve economic security bill</h3></a>
-                        <h5>4:42 pm - 01/03/2022</h5>
-                        <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                            With
-                            Rich
-                            Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                            Reports
-                            Her
-                            Relationship With </p>
+                        <?php
+                                    foreach($bottomStories as $bottomStory){
+                                    ?>
+                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
+                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
+                                   
+                                 <?php
+                                    }
+                                     ?>
                          <h5>By Hiroki Hachiman</h5>
                     </div>
                 
