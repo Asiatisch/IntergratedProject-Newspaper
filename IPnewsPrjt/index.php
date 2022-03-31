@@ -5,6 +5,8 @@
       
     $sideStories = Get::all('articles', 7);
     $topStories = Get::all('articles', 1);
+    $bottomStories = Get::all('articles', 1);
+
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
