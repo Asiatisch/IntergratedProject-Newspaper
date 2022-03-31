@@ -4,6 +4,7 @@
   try {
       
     $sideStories = Get::all('articles', 7);
+    $topStories = Get::all('articles', 1);
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -38,8 +39,6 @@
         <!-- This is my main story -->
         <div class="topStory width-8 nested">
 
-
-            
             <div class="width-12"><hr></div>
 
             <div class="width-12">
@@ -69,7 +68,7 @@
                             Her
                             Relationship With </p>
                          <h5>By Hiroki Hachiman</h5>
-                         <hr>
+                        
                     </div>
                     <div class="width-6">
                         <hr>
@@ -151,8 +150,7 @@
                                 
                              <div class="topStory width-4">
                              
-                            
-
+                         <hr>
     </div>
    
 
