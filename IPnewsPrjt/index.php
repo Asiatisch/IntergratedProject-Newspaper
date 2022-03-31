@@ -3,9 +3,9 @@
 
   try {
       
-    $sideStories = Get::all('articles', 7);
+    $sideStories = Get::all('articles', 8, 1);
     $topStories = Get::all('articles', 1);
-    $bottomStories = Get::all('articles', 1);
+    $bottomStories = Get::all('articles', 4, 1);
 
       
   } catch (Exception $e) {
@@ -59,73 +59,24 @@
                     
 
             </div>
-                     <div class="width-6">
+                     
+                        <?php
+                                    foreach($bottomStories as $bottomStory){
+                                    ?>
+                                    <div class="width-6">
                          <hr>
                         <h5><span>Business</span>/Economy</h5>
-                        <?php
-                                    foreach($bottomStories as $bottomStory){
-                                    ?>
                                     <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
                                     <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
                                     <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                                   
+                                    <h5>By Hiroki Hachiman</h5>
+                        
+                        
+                        </div>
                                  <?php
                                     }
                                      ?>
-                         <h5>By Hiroki Hachiman</h5>
-                        
-                        
-                    </div>
-                    <div class="width-6">
-                        <hr>
-                        <h5><span>Business</span>/Economy</h5>
-                        <?php
-                                    foreach($bottomStories as $bottomStory){
-                                    ?>
-                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
-                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
-                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                                   
-                                 <?php
-                                    }
-                                     ?>
-                         <h5>By Hiroki Hachiman</h5>
-                        
-                    </div>
-                    <div class="width-6">
-                        <hr>
-                        <h5><span>Business</span>/Economy</h5>
-                        <?php
-                                    foreach($bottomStories as $bottomStory){
-                                    ?>
-                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
-                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
-                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                                   
-                                 <?php
-                                    }
-                                     ?>
-                         <h5>By Hiroki Hachiman</h5>
                          
-                    </div>
-                
-                    <div class="width-6">
-                        <hr>
-                        <h5><span>Business</span>/Economy</h5>
-                        <?php
-                                    foreach($bottomStories as $bottomStory){
-                                    ?>
-                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
-                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
-                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                                   
-                                 <?php
-                                    }
-                                     ?>
-                         <h5>By Hiroki Hachiman</h5>
-                    </div>
-                
-           
         <div class="topstory width-8"></div>
     
             
@@ -133,19 +84,6 @@
              <div class="topStory width-4 ">
                 <div class="width-12">
                     <hr>
-                    <h4><a href="url">Japan ruling parties approve economic security bill</a> </h4>
-                    <p>Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down Reports Her Relationship
-                        With
-                        Rich
-                        Paul Is "Strained" Adele's New Diamond Ring Has Sparked Engagement Rumors After She Shut Down
-                        Reports
-                        Her
-                        Relationship With </p>
-                        <hr>
-                     </div>
-                     <div class="topStory width-4 "> 
-                        <div class="width-12">
-
                                     <?php
                                     foreach($sideStories as $sideStory){
                                     ?>

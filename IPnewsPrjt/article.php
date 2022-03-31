@@ -3,7 +3,7 @@
 
   try {
       
-    $sideStories = Get::all('articles', 7);
+    $sideStories = Get::all('articles', 5);
     $topStories = Get::all('articles', 1);
       
   } catch (Exception $e) {
@@ -53,12 +53,6 @@
                         sites in Kyiv, warning residents near them to leave. On Tuesday, Russian forces fired at the main television tower in the Ukrainian capital, killing at least five people.
                     </p>
                     <h5>By Hiroki Hachiman</h5>
-
-           
-           
-        <div class="topstory width-8"></div>
-    
-            
         </div>
              <div class="topStory width-4 ">
                 <div class="width-12">
