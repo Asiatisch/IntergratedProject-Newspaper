@@ -43,16 +43,18 @@
 
             <div class="width-12">
                 <h4><span>Global</span>/War</h4>
-                <h1>Japan to accept Ukranian refugees</h1>
-                <h5><span>4:42 pm</span> - Feburuary 17, 2022</h5>
-                <h6 class="summary bottom">Japan will accept Ukrainian refugees who have fled to other countries because of the ongoing conflict in their country, Prime Minister Fumio Kishida has revealed.</h6>
-                    <p class="pfont">Japan said Wednesday it will temporarily close its embassy in Kyiv as Russia's invasion of Ukraine escalates, with many civilians desperately fleeing the country.
-                        The embassy's operations will be transferred to a temporary liaison office set up in Lviv in western Ukraine, according to the Foreign Ministry.The office, 
-                        located near the border with Poland, will continue to provide support to Japanese citizens living in Ukraine, including those trying to evacuate from the country, 
-                        the ministry said.The decision to close the embassy on Wednesday was announced after Russia's military said it would strike Ukrainian communications and intelligence 
-                        sites in Kyiv, warning residents near them to leave. On Tuesday, Russian forces fired at the main television tower in the Ukrainian capital, killing at least five people.
-                    </p>
+                <?php
+                                    foreach($topStories as $topStory){
+                                    ?>
+                                    <h1><?= $topStory ->headline ?> </h1>
+                                    <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
+                                    <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
+                                    <p class="pfont"><?= $topStory ->article ?> </p>
+                                 <?php
+                                    }
+                                     ?>
                     <h5>By Hiroki Hachiman</h5>
+                    
 
             </div>
                      <div class="width-6">
