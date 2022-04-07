@@ -24,16 +24,7 @@
 
                 <div class="width-12">
                 <h1><span>Add</span> Author</h1>
-                <?php
-                                    foreach($topStories as $topStory){
-                                    ?>
-                                    <h1><?= $topStory ->headline ?> </h1>
-                                    <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
-                                    <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
-                                    <p class="pfont"><?= $topStory ->article ?> </p>
-                                 <?php
-                                    }
-                                     ?>
+                <?php ?>
                     
                     <h5>By Hiroki Hachiman</h5>
         </div>
