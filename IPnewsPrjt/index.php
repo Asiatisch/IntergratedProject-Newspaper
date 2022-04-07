@@ -7,6 +7,7 @@
     $topStories = Get::all('articles', 1);
     $bottomStories = Get::all('articles', 4, 1);
 
+
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -59,34 +60,32 @@
                 
                 <?php
                 
-                                    foreach($topStories as $topStory){
-                                    ?>
-                                    <h1><?= $topStory ->headline ?> </h1>
-                                    <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
-                                    <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
-                                    <p class="pfont"><?= $topStory ->article ?> </p>
-                                 <?php
-                                    }
-                                     ?>
+                foreach($topStories as $topStory){
+                ?>
+                <h1><?= $topStory ->headline ?> </h1>
+                <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
+                <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
+                <p class="pfont"><?= $topStory ->article ?> </p>
+              <?php
+                }
+                  ?>
                     <h5>By Hiroki Hachiman</h5>
                     
 
             </div>
                      
-                        <?php
-                                    foreach($bottomStories as $bottomStory){
-                                    ?>
-                                    <div class="width-6">
-                         <hr>
-                        <h5><span>Business</span>/Economy</h5>
-                                    <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
-                                    <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
-                                    <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                                    <h5>By Hiroki Hachiman</h5>
-                        
-                        
-                        </div>
-                                 <?php
+            <?php
+            foreach($bottomStories as $bottomStory){
+            ?>
+            <div class="width-6">
+              <hr>
+            <h5><span>Business</span>/Economy</h5>
+                <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
+                <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
+                <h5>By Hiroki Hachiman</h5>
+            </div>
+                      <?php
                                     }
                                      ?>
                          

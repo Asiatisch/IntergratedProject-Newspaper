@@ -33,9 +33,15 @@
 
                 <div class="width-12">
                 <h1><span>Add</span> Author</h1>
-                <?php ?>
+                <form>
+                <div>
+                <label>first name<label>
+                <input type=-"text"/>
+                </div>
+                </form>
+              
                     
-                    <h5>By Hiroki Hachiman</h5>
+                    
         </div>
 </body>
 </html>
