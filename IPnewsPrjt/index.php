@@ -33,19 +33,32 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
 
 <body>
 
     <div class="container">
+     <!-- NavBar -->
+    <div class="width-12">
+    <ul>
+    	<li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="article.php">Articles</a></li>
+    <li><a href="addAuthor.php">Author</a></li>
+    </ul>
+
+    </div>
         <!-- This is my main story -->
         <div class="topStory width-8 nested">
+          
 
             <div class="width-12"><hr></div>
-
+          
             <div class="width-12">
+               
                 <h4><span>Global</span>/War</h4>
+                
                 <?php
+                
                                     foreach($topStories as $topStory){
                                     ?>
                                     <h1><?= $topStory ->headline ?> </h1>

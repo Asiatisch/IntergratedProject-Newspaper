@@ -36,12 +36,21 @@
 <body>
 
     <div class="container">
+     <!-- NavBar -->
+     <div class="width-12">
+    <ul>
+    	<li><a class="active" href="index.php">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="article.php">Articles</a></li>
+    <li><a href="addAuthor.php">Author</a></li>
+    </ul>
         <!-- This is my main story -->
         <div class="topStory width-12 nested">
 
             <div class="width-12"><hr></div>
 
-                <div class="width-6">
+                <div class="width-9">
+                <hr>
                 <h4><span>Global</span>/War</h4>
                 <?php
                                     foreach($topStories as $topStory){
@@ -56,7 +65,7 @@
                     
                     <h5>By Hiroki Hachiman</h5>
         </div>
-        <div class="topStory width-4 nested">
+        <div class="topStory width-3 nested">
 
 
 <div class="width-12">

@@ -16,7 +16,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <div class="container">
+ <!-- NavBar -->
+ <div class="width-12">
+    <ul>
+    	<li><a class="active" href="index.php">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="article.php">Articles</a></li>
+    <li><a href="addAuthor.php">Author</a></li>
+    </ul>
         <!-- This is  Author -->
         <div class="topStory width-8 nested">
 
