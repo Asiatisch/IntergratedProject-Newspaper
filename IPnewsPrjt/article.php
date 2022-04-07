@@ -37,11 +37,11 @@
 
     <div class="container">
         <!-- This is my main story -->
-        <div class="topStory width-8 nested">
+        <div class="topStory width-12 nested">
 
             <div class="width-12"><hr></div>
 
-                <div class="width-12">
+                <div class="width-6">
                 <h4><span>Global</span>/War</h4>
                 <?php
                                     foreach($topStories as $topStory){
@@ -56,8 +56,11 @@
                     
                     <h5>By Hiroki Hachiman</h5>
         </div>
-             <div class="topStory width-4 ">
-                <div class="width-12">
+        <div class="topStory width-4 nested">
+
+
+<div class="width-12">
+
                                     <?php
                                     foreach($sideStories as $sideStory){
                                     ?>
@@ -67,13 +70,10 @@
                                  <?php
                                     }
                                      ?>
-                                   
-                                 
-                                 </div>
-                                
-                             <div class="topStory width-4">
+     </div>
+
                              
-                         <hr>
+                        
     </div>
    
 
