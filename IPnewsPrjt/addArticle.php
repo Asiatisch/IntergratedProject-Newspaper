@@ -27,29 +27,34 @@
     <li><a href="addAuthor.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
-        <!-- This is  Author -->
+        <!-- This is the add Article form  -->
         <div class="topStory width-8 nested">
 
             <div class="width-12"><hr></div>
 
                 <div class="width-12">
-                <h1><span>Add</span> Author</h1>
-                <form method="POST">
+                <h1><span>Add</span> Article</h1>
+                <form>
                 <div>
-                <label>first name<label><br>
+                <label>headline<label><br>
                 <input type=-"text"/>
                 </div>
                 
                 <div>
-                <label>Last name<label><br>
+                <label>Sub Heading<label><br>
                 <input type=-"text"/>
                 </div>
                
                 <div>
-                <label>link<label><br>
+                <label>Summary<label><br>
                 <input type=-"text"/>
                 </div>
-                <a href ="index.php">Cancel
+
+                <div>
+                <label>Article<label><br>
+                <input type=-"text"/>
+                </div>
+                <a href ="index.php">Cancel</a>
                 <input type="submit">
                 </form>
   

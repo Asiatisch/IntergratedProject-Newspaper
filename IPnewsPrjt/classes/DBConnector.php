@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////
 ////////////CHANGE THESE SETTINGS ONLY////////////////
 define('DATABASE_NAME', 'intergrated_project');
-define('STORIES_TABLE_NAME', 'stories');
+define('STORIES_TABLE_NAME', 'table');
 define('CATEGORIES_TABLE_NAME', 'categories');
 define('CATEGORIES_FOREIGN_KEY', 'category_id');
 define('AUTHORS_TABLE_NAME', 'authors');

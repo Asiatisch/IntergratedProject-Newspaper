@@ -2,12 +2,13 @@
   require_once 'classes/DBConnector.php';
 
   try {
-      
+  
+  
     $sideStories = Get::all('articles', 8, 1);
     $topStories = Get::all('articles', 1);
     $bottomStories = Get::all('articles', 4, 1);
-
-
+    
+    
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -45,6 +46,7 @@
     <li><a href="#news">News</a></li>
     <li><a href="article.php">Articles</a></li>
     <li><a href="addAuthor.php">Author</a></li>
+    <li><a href="addArticle.php">addArticle</a></li>
     </ul>
 
     </div>
@@ -56,34 +58,41 @@
           
             <div class="width-12">
                
-                <h4><span>Global</span>/War</h4>
+               
                 
                 <?php
                 
                 foreach($topStories as $topStory){
+                  $author = Get::byId('author', $topStory->author_id);
+                  $category = Get::byId('categories', $topStory->category_id);
                 ?>
+                <h4><?= $category ->name ?>
                 <h1><?= $topStory ->headline ?> </h1>
                 <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
                 <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
                 <p class="pfont"><?= $topStory ->article ?> </p>
+                <h5 class="pfont"><?= $author ->first_name ?> <?= $author ->last_name ?></h5>
               <?php
                 }
                   ?>
-                    <h5>By Hiroki Hachiman</h5>
+                    
                     
 
             </div>
                      
             <?php
             foreach($bottomStories as $bottomStory){
+              $author = Get::byId('author', $bottomStory->author_id);
+              $category = Get::byId('categories', $bottomStory->category_id);
             ?>
             <div class="width-6">
               <hr>
-            <h5><span>Business</span>/Economy</h5>
+            <h5><?= $category ->name ?></h5>
                 <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
                 <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
                 <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
-                <h5>By Hiroki Hachiman</h5>
+                <h5><?= $author ->first_name ?> <?= $author ->last_name ?></h5>
+               
             </div>
                       <?php
                                     }

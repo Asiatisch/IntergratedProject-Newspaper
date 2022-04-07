@@ -43,6 +43,7 @@
     <li><a href="#news">News</a></li>
     <li><a href="article.php">Articles</a></li>
     <li><a href="addAuthor.php">Author</a></li>
+    <li><a href="addArticle.php">addArticle</a></li>
     </ul>
         <!-- This is my main story -->
         <div class="topStory width-12 nested">
