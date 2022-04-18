@@ -22,40 +22,37 @@
  <div class="width-12">
     <ul>
     	<li><a class="active" href="index.php">Home</a></li>
+   
+    
     <li><a href="addAuthorForm.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
-        <!-- This is the add Article form  -->
+        <!-- This is  Author -->
         <div class="topStory width-8 nested">
 
             <div class="width-12"><hr></div>
 
                 <div class="width-12">
-                <h1><span>Add</span> Article</h1>
-                <form>
+                <h1><span>Add</span> Author</h1>
+                <form method="POST" action="addAuthor.php">
                 <div>
-                <label>headline<label><br>
+                <label>first name<label><br>
                 <input type=-"text"/>
                 </div>
                 
                 <div>
-                <label>Sub Heading<label><br>
+                <label>Last name<label><br>
                 <input type=-"text"/>
                 </div>
                
                 <div>
-                <label>Summary<label><br>
+                <label>link<label><br>
                 <input type=-"text"/>
                 </div>
-
-                <div>
-                <label>Article<label><br>
-                <input type=-"text"/>
-                </div>
-                <a href ="index.php">Cancel</a>
+                <a href ="index.php">Cancel
                 <input type="submit">
                 </form>
-  
-        </div>
+                <div class="clear"></div>
+        </div class>
 </body>
 </html>

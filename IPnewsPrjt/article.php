@@ -42,7 +42,7 @@
      <div class="width-12">
     <ul>
     	<li><a class="active" href="index.php">Home</a></li>
-    <li><a href="addAuthor.php">Author</a></li>
+    <li><a href="addAuthorForm.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
         <!-- This is my main story -->
