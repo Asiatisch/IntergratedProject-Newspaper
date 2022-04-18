@@ -3,8 +3,10 @@
 
   try {
       
-    $sideStories = Get::all('articles', 5);
-    $topStories = Get::all('articles', 1);
+    $sideStories = Get::all('articles', 5, $_GET['id']);
+    $topStory = Get::byId('articles', $_GET['id']);
+    $author = Get::byId('author', $topStory->author_id);
+    $category = Get::byId('categories', $topStory->category_id);
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -40,8 +42,6 @@
      <div class="width-12">
     <ul>
     	<li><a class="active" href="index.php">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="article.php">Articles</a></li>
     <li><a href="addAuthor.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
@@ -53,18 +53,17 @@
                 <div class="width-9">
                 <hr>
                 <h4><span>Global</span>/War</h4>
-                <?php
-                                    foreach($topStories as $topStory){
+                <?php           
                                     ?>
                                     <h1><?= $topStory ->headline ?> </h1>
                                     <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
                                     <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
                                     <p class="pfont"><?= $topStory ->article ?> </p>
-                                 <?php
-                                    }
+                                    <h5><?= $author ->first_name ?> <?= $author ->last_name ?></h5>
+                                 <?php 
                                      ?>
                     
-                    <h5>By Hiroki Hachiman</h5>
+                    
         </div>
         <div class="topStory width-3 nested">
 
@@ -74,8 +73,8 @@
                                     <?php
                                     foreach($sideStories as $sideStory){
                                     ?>
-                                     <h4><a href="url"><?= $sideStory ->headline ?></a> </h4>
-                                    <p><a href="url"><?= $sideStory ->summary ?> </p>
+                                     <h4><a href="article.php?id=<?= $sideStory ->id ?>"><?= $sideStory ->headline ?></a> </h4>
+                                    <p><?= $sideStory ->summary ?> </p>
                                    <hr>
                                  <?php
                                     }

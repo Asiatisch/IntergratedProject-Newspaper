@@ -43,8 +43,6 @@
     <div class="width-12">
     <ul>
     	<li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="article.php">Articles</a></li>
     <li><a href="addAuthor.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
@@ -67,7 +65,7 @@
                   $category = Get::byId('categories', $topStory->category_id);
                 ?>
                 <h4><?= $category ->name ?>
-                <h1><?= $topStory ->headline ?> </h1>
+                <h1><a href="article.php?id=<?= $topStory ->id ?>"><?= $topStory ->headline ?></a></h1>
                 <h5><span><?= $topStory ->time ?></span> <?= $topStory ->date ?></a> </h5>
                 <h6 class="summary bottom"><?= $topStory ->summary ?></h6>
                 <p class="pfont"><?= $topStory ->article ?> </p>
@@ -88,7 +86,7 @@
             <div class="width-6">
               <hr>
             <h5><?= $category ->name ?></h5>
-                <h3><a href="url"><?= $bottomStory ->headline ?> </a></h3>
+                <h3><a href="article.php?id=<?= $bottomStory ->id ?>"><?= $bottomStory ->headline ?> </a></h3>
                 <h5><a href="url"><?= $bottomStory ->time ?> <?= $bottomStory ->date ?></a> </h5>
                 <p><a href="url"><?= $bottomStory ->summary ?> </a></p>
                 <h5><?= $author ->first_name ?> <?= $author ->last_name ?></h5>
@@ -108,7 +106,7 @@
                                     <?php
                                     foreach($sideStories as $sideStory){
                                     ?>
-                                     <h4><a href="url"><?= $sideStory ->headline ?></a> </h4>
+                                     <h4><a href="article.php?id=<?= $sideStory ->id ?>"><?= $sideStory ->headline ?></a> </h4>
                                     <p><a href="url"><?= $sideStory ->summary ?> </p>
                                    <hr>
                                  <?php

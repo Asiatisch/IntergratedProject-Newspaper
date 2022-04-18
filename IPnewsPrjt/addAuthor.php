@@ -22,8 +22,8 @@
  <div class="width-12">
     <ul>
     	<li><a class="active" href="index.php">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="article.php">Articles</a></li>
+   
+    
     <li><a href="addAuthor.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
     </ul>
