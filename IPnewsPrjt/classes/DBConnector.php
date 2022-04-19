@@ -5,7 +5,7 @@ define('DATABASE_NAME', 'intergrated_project');
 define('STORIES_TABLE_NAME', 'table');
 define('CATEGORIES_TABLE_NAME', 'categories');
 define('CATEGORIES_FOREIGN_KEY', 'category_id');
-define('AUTHORS_TABLE_NAME', 'authors');
+define('AUTHORS_TABLE_NAME', 'author');
 define('AUTHORS_FOREIGN_KEY', 'author_id');
 //////////////////////////////////////////////////////
 /////////////////END SETTINGS/////////////////////////
@@ -38,10 +38,10 @@ class Connection
 
 class Post
 {
-    public function create($tableName, $data)
+    public static function create($tableName, $data)
     {
-       $sql = "INSERT INTO " . $tableName . "(" . implode(array_keys($data), ", ") . ") VALUES ('" . implode(array_values($data), "', '") . "')";
-       
+       $sql = "INSERT INTO " . $tableName . "(" . implode( ", ", array_keys($data)) . ") VALUES ('" . implode( "', '",array_values($data)) . "')";
+
        var_dump($sql);
 
         $conn = Connection::getInstance();

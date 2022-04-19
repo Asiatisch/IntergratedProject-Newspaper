@@ -25,7 +25,7 @@
    
     
     <li><a href="addAuthorForm.php">Author</a></li>
-    <li><a href="addArticle.php">addArticle</a></li>
+    <li><a href="addArticleForm.php">addArticle</a></li>
     </ul>
         <!-- This is  Author -->
         <div class="topStory width-8 nested">
@@ -37,17 +37,17 @@
                 <form method="POST" action="addAuthor.php">
                 <div>
                 <label>first name<label><br>
-                <input type=-"text"/>
+                <input type="text" name = "first_name">
                 </div>
                 
                 <div>
                 <label>Last name<label><br>
-                <input type=-"text"/>
+                <input type="text" name = "last_name">
                 </div>
                
                 <div>
                 <label>link<label><br>
-                <input type=-"text"/>
+                <input type="text" name = "link">
                 </div>
                 <a href ="index.php">Cancel
                 <input type="submit">
