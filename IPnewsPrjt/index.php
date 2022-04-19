@@ -44,7 +44,7 @@
     <ul>
     	<li><a class="active" href="#home">Home</a></li>
     <li><a href="addAuthorForm.php">Author</a></li>
-    <li><a href="addArticle.php">addArticle</a></li>
+    <li><a href="addArticleForm.php">addArticle</a></li>
     </ul>
 
     </div>

@@ -52,6 +52,31 @@
                 <label>Article<label><br>
                 <input type=-"text"/>
                 </div>
+
+                <div>
+                <label>Summary<label><br>
+                <input type=-"text"/>
+                </div>
+
+                <div>
+                <label>date<label><br>
+                <input type=-"text"/>
+                </div>
+
+                <div>
+                <label>time<label><br>
+                <input type=-"text"/>
+                </div>
+
+                <div>
+                <label>Author<label><br>
+                <input type=-"text"/>
+                </div>
+
+                <div>
+                <label>category<label><br>
+                <input type=-"text"/>
+                </div>
                 <a href ="index.php">Cancel</a>
                 <input type="submit">
                 </form>
