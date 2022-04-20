@@ -36,18 +36,18 @@
                 <h1><span>Add</span> Author</h1>
                 <form method="POST" action="addAuthor.php">
                 <div>
-                <label>first name<label><br>
-                <input type="text" name = "first_name">
+                <label><h3>First Name</h3><label><br>
+                <textarea name="first_name" rows="2" cols="100"></textarea>
                 </div>
                 
                 <div>
                 <label>Last name<label><br>
-                <input type="text" name = "last_name">
+                <textarea name="last_name" rows="2" cols="100"></textarea>
                 </div>
                
                 <div>
                 <label>link<label><br>
-                <input type="text" name = "link">
+                <textarea name="link" rows="2" cols="100"></textarea>
                 </div>
                 <a href ="index.php">Cancel
                 <input type="submit">
