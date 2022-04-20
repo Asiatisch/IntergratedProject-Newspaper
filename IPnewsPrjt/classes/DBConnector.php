@@ -2,10 +2,10 @@
 //////////////////////////////////////////////////////
 ////////////CHANGE THESE SETTINGS ONLY////////////////
 define('DATABASE_NAME', 'intergrated_project');
-define('STORIES_TABLE_NAME', 'table');
+define('STORIES_TABLE_NAME', 'articles');
 define('CATEGORIES_TABLE_NAME', 'categories');
 define('CATEGORIES_FOREIGN_KEY', 'category_id');
-define('AUTHORS_TABLE_NAME', 'author');
+define('AUTHORS_TABLE_NAME', 'authors');
 define('AUTHORS_FOREIGN_KEY', 'author_id');
 //////////////////////////////////////////////////////
 /////////////////END SETTINGS/////////////////////////

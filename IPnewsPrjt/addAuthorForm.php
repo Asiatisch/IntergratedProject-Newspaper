@@ -36,7 +36,7 @@
                 <h1><span>Add</span> Author</h1>
                 <form method="POST" action="addAuthor.php">
                 <div>
-                <label><h3>First Name</h3><label><br>
+                <label>First Name<label><br>
                 <textarea name="first_name" rows="2" cols="100"></textarea>
                 </div>
                 

@@ -4,7 +4,7 @@
   try {
       
     $categories = Get::all('categories');
-    $authors = Get::all('author');
+    $authors = Get::all('authors');
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
@@ -60,7 +60,7 @@
                
                 <div>
                 <label>sub Heading <label><br>
-                <textarea name="article" rows="2" cols="100"></textarea>
+                <textarea name="sub_heading" rows="2" cols="100"></textarea>
                 </div>
 
                 <div>
