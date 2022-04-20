@@ -1,3 +1,18 @@
+<?php
+  require_once 'classes/DBConnector.php';
+
+  try {
+      
+    $categories = Get::all('categories');
+    $authors = Get::all('author');
+      
+  } catch (Exception $e) {
+    die("Exception: " . $e->getMessage());
+  }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,48 +50,60 @@
                 <form method="POST" action="addArticle.php">
                 <div>
                 <label>headline<label><br>
-                <input type=-"text"/>
+                <textarea name="headline" rows="2" cols="100"></textarea>
                 </div>
                 
                 <div>
-                <label>Sub Heading<label><br>
-                <input type=-"text"/>
+                <label>Short headline<label><br>
+                <textarea name="short_headline" rows="2" cols="100"></textarea>
                 </div>
                
                 <div>
-                <label>Summary<label><br>
-                <input type=-"text"/>
+                <label>sub Heading <label><br>
+                <textarea name="article" rows="2" cols="100"></textarea>
                 </div>
 
                 <div>
                 <label>Article<label><br>
-                <input type=-"text"/>
+                <textarea name="article" rows="5" cols="100"></textarea>
                 </div>
 
                 <div>
                 <label>Summary<label><br>
-                <input type=-"text"/>
+                <textarea name="summary" rows="5" cols="100"></textarea>
+                
                 </div>
 
                 <div>
                 <label>date<label><br>
-                <input type=-"text"/>
+                <input type="date" id="date" name="date">
                 </div>
 
                 <div>
                 <label>time<label><br>
-                <input type=-"text"/>
+                <input type="time" id="time" name="time">
                 </div>
 
                 <div>
                 <label>Author<label><br>
-                <input type=-"text"/>
+                <select  name="author_id">
+                <?php foreach($authors as $author) {?>
+                    <option value="<?= $author->id ?>"><?= $author->first_name ?> <?= $author->last_name ?> </option>
+                <?php } ?>
+                </select>
                 </div>
 
                 <div>
-                <label>category<label><br>
-                <input type=-"text"/>
+                <label>Category<label><br>
+                <select  name="category_id">
+                <?php foreach($categories as $category) {?>
+                    <option value="<?= $category->id ?>"><?= $category->name ?></option>
+                <?php } ?>
+              
+                </select>
                 </div>
+
+
                 <a href ="index.php">Cancel</a>
                 <input type="submit">
                 </form>
