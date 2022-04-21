@@ -6,10 +6,10 @@
     $data = [
         'first_name' => $_POST["first_name"],
         'last_name' => $_POST["last_name"],
-        'link' => $_POST["link"]
+        'link' => $_POST["link"],
       ];
       
-      Post::create('authors', $data);
+      Post::create('author', $data);
 
       header("Location: index.php");
       

@@ -4,7 +4,7 @@
   try {
       
     $categories = Get::all('categories');
-    $authors = Get::all('authors');
+    $authors = Get::all('author');
       
   } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
