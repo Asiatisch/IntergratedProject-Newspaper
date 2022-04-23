@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,8 @@
     
     <li><a href="addAuthorForm.php">Author</a></li>
     <li><a href="addArticleForm.php">addArticle</a></li>
+    <li><a href="url">update Author</a></li>
+    <li><a href="url">update Article</a></li>
     </ul>
         <!-- This is  Author -->
         <div class="topStory width-8 nested">
