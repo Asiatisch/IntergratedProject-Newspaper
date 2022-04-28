@@ -39,8 +39,7 @@
     	<li><a class="active" href="index.php">Home</a></li>
     <li><a href="addAuthorForm.php">Author</a></li>
     <li><a href="addArticle.php">addArticle</a></li>
-    <li><a href="url">update Author</a></li>
-    <li><a href="url">update Article</a></li>
+    
     </ul>
         <!-- This is the add Article form  -->
         <div class="topStory width-8 nested">

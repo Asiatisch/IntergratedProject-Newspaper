@@ -45,8 +45,7 @@
     	<li><a class="active" href="#home">Home</a></li>
     <li><a href="addAuthorForm.php">Author</a></li>
     <li><a href="addArticleForm.php">addArticle</a></li>
-    <li><a href="url">update Author</a></li>
-    <li><a href="url">update Article</a></li>
+   
     </ul>
 
     </div>
