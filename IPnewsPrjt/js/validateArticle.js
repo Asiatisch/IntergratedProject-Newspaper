@@ -1,25 +1,23 @@
 /* get the input fields */
 
-let submitBtn = document.getElementById('submit_btn');
-let nameInput = document.getElementById('name');
-let addressInput = document.getElementById('address');
-let phoneInput = document.getElementById('phone');
-let emailInput = document.getElementById('email');
-let dobInput = document.getElementById('dob');
-let centreInput = document.getElementById('centre');
-let insuranceInput = document.getElementsByName('insurance');
-let preferenceInput = document.getElementsByClassName('preference');
+let headlineInput = document.getElementById('headline');
+let timeInput = document.getElementById('time');
+let dateInput = document.getElementById('date');
+let summaryInput = document.getElementById('summary');
+let articleInput = document.getElementById('article');
+let fNameInput = document.getElementById('first_name');
+let lNameInput = document.getElementById('last_name');
+
 
 /* get error div by id */
 
-let nameError = document.getElementById('name_error');
-let addressError = document.getElementById('address_error');
-let phoneError = document.getElementById('phone_error');
-let emailError = document.getElementById('email_error');
-let dobError = document.getElementById('dob_error');
+let headlineError = document.getElementById('name_error');
+let timeError = document.getElementById('address_error');
+let dateError = document.getElementById('phone_error');
+let summaryError = document.getElementById('email_error');
+let articleError = document.getElementById('dob_error');
 let centreError = document.getElementById('centre_error');
-let insuranceError = document.getElementsByid('insurance_error');
-let preferencesError = document.getElementsByid('preference_error');
+
 
 /* Regex pattern */
 const NAME_REGEX = /^[a-zA-Z-' ]*$/;
