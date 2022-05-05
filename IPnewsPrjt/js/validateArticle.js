@@ -91,35 +91,13 @@ function onsubmitform(evt) {
         showError(phoneError, "Only letters and spaces are allowed");
     }
 
-    /* validate the email */
-    if(emailInput.value === "") {
-        showError(emailError, "The email field is required");
-    }
-    else if(regexValid(email_REGEX, emailInput.value)){
-        showError(emailError, "Invalid email format");
-    }
-
-    /* validate the dateOfBirth */
-    if(dobInput.value === "") {
-        showError(dobError, "The date of birth field is required");
-    }
-    else if(regexValid(dob_REGEX, dobInput.value)){
-        showError(dobError, "Invalid date of birth format");
-    }
-
-    /* validate the centre */
-    if(centreInput.value === "") {
-        showError(centreError, "The medical centre field is required");
+    /* validate the article*/
+    if(articleInput.value === "") {
+        showError(articleError, "The article field is required");
     }
     
-     /* validate insurance */
-     if(!isSelected(insuranceInput)) {
-        showError(centreError, "The insurance field is required");
-     }
-    }
-     /* validate preferences */
-     if(!isSelected(preferenceInput)) {
-        showError(preferencesError, "The preference field is required");
+ 
+     
      }
 
     if(errorExists){
