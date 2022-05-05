@@ -67,9 +67,9 @@
                     
                     
         </div>
-        <div class="topStory width-3 nested">
 
 
+ <div class="topStory width-3 nested">
 <div class="width-12">
 
                                     <?php

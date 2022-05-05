@@ -5,18 +5,18 @@ let timeInput = document.getElementById('time');
 let dateInput = document.getElementById('date');
 let summaryInput = document.getElementById('summary');
 let articleInput = document.getElementById('article');
-let fNameInput = document.getElementById('first_name');
-let lNameInput = document.getElementById('last_name');
+let authorInput = document.getElementById('author');
+
 
 
 /* get error div by id */
 
-let headlineError = document.getElementById('name_error');
-let timeError = document.getElementById('address_error');
-let dateError = document.getElementById('phone_error');
-let summaryError = document.getElementById('email_error');
-let articleError = document.getElementById('dob_error');
-let centreError = document.getElementById('centre_error');
+let headlineError = document.getElementById('headline_error');
+let timeError = document.getElementById('time_error');
+let dateError = document.getElementById('date_error');
+let summaryError = document.getElementById('summary_error');
+let articleError = document.getElementById('article_error');
+let authorError = document.getElementById('author_error');
 
 
 /* Regex pattern */
@@ -58,40 +58,37 @@ function isSelected(inputField){
 
 function resetValues() {
     errorExists = false;
-    nameError.innerHTML = "";
-    addressError.innerHTML = "";
-    phoneError.innerHTML = "";
-    emailError.innerHTML = "";
-    dobError.innerHTML = "";
-    centreError.innerHTML = "";
-    insuranceError.innerHTML="";
-    preferencesError.innerHTML="";
+    headlineError.innerHTML = "";
+    timeError.innerHTML = "";
+    dateError.innerHTML = "";
+    summaryError.innerHTML = "";
+    articleError.innerHTML = "";
+    authorError.innerHTML = "";
+
 }
 
 function onsubmitform(evt) {
     resetValues();
-    /* validate the name */
-    if(nameInput.value === "") {
-        showError(nameError, "The name field is required");
+    /* validate the headline */
+    if(HeadlineInput.value === "") {
+        showError(HeadlineError, "The Headline field is required");
     }
-    else if(regexValid(NAME_REGEX, nameInput.value)){
-        showError(nameError, "Only letters and spaces are allowed");
-    }
+     else if(regexValid(NAME_REGEX, nameInput.value)){
+        showError(HeadlineError, "Only letters and spaces are allowed");
+    } 
 
-    /* validate the address */
-    if(addressInput.value === "") {
-        showError(addressError, "The address field is required");
+    /* validate the date */
+    if(dateInput.value === "") {
+        showError(dateError, "The date field is required");
     }
-    else if(regexValid(address_REGEX, addressInput.value)){
-        showError(addressError, "Only letters, numbers and spaces are allowed");
-    }
+  
 
-    /* validate the phone */
-    if(phoneInput.value === "") {
-        showError(phoneError, "The phone field is required");
+    /* validate the summary */
+    if(summaryInput.value === "") {
+        showError(summaryError, "The summary field is required");
     }
-    else if(regexValid(phone_REGEX, phoneInput.value)){
-        showError(phoneError, "Phone number should be in (##) ######### format");
+    else if(regexValid(NAME_REGEX, summaryInput.value)){
+        showError(phoneError, "Only letters and spaces are allowed");
     }
 
     /* validate the email */
